@@ -1,6 +1,11 @@
+'use client'
+
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { ParallaxProvider } from 'react-scroll-parallax'
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <ParallaxProvider scrollAxis='vertical'>
+      <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
+
+        {children}
+        </MouseParallaxContainer>
+        </ParallaxProvider>
+        </body>
     </html>
   )
 }

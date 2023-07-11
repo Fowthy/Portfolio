@@ -18,10 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  scroll-behavior: smooth;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    ) 
+     rgb(var(--background-start-rgb));
+}
+#home {
+  background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), rgb(255, 154, 91) 0%, rgba(255,185,105,1) 60%);
+
 }
