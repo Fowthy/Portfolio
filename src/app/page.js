@@ -6,7 +6,7 @@ import Sidebar from '@/app/sidebar'
 import Image from 'next/image'
 import {useParallax} from "react-scroll-parallax";
 import {useEffect, useRef, useState} from 'react';
-import { MouseParallaxChild } from "react-parallax-mouse";
+import { MouseParallaxChild, MouseParallaxContainer } from "react-parallax-mouse";
 
 
 
@@ -50,13 +50,14 @@ export default function Home() {
     })
 
     return (
+      <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
         <main
             id='home'
             className="flex min-h-screen flex-col items-center justify-between">
             <div className='hidden w-11/12 h-screen sm:flex absolute'><Sidebar/></div>
             <div className='flex w-full h-full'>
-                <div className='grid grid-cols-1 gap-4 w-full p-4 mt-48'>
-                    <div id='portfoliogrid' className='grid grid-cols-2 gap-2 w-full' ref={target}>
+                <div className='grid grid-cols-1 gap-4 w-full p-4 mt-11 sm:mt-48'>
+                    <div id='portfoliogrid' className='grid grid-cols-1 sm:grid-cols-2 gap-2 w-full' ref={target}>
                         <div className="flex flex-col items-center">
                             <p>Text about me bla bla bla</p>
                         </div>
@@ -102,5 +103,6 @@ export default function Home() {
                 </div>
             </div>
         </main>
+        </MouseParallaxContainer>
     )
 }
