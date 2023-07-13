@@ -18,21 +18,37 @@
 
 body {
   font-size: 7vmin;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: rgb(var(--foreground-rgb));
   scroll-behavior: smooth;
-
-  background-image: url('../images/background2.jpg');
+  scrollbar-width: 0px;
+  /* overflow: hidden; */
+  
   /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
     ) 
      rgb(var(--background-start-rgb));
     }
     #home {
-  background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), rgb(255, 154, 91) 0%, rgba(255,185,105,1) 60%); */
+      background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), rgb(255, 154, 91) 0%, rgba(255,185,105,1) 60%); */
+      
+    }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+    
+.wrapper {
+  background-image: url('../images/background2.jpg');
+}
+.wpr {
+}
+.canvas {
+  
+  /* height: 250vh; */
 }
 .webgl
 {
@@ -60,6 +76,11 @@ h1 {
   text-align: center;
   position: absolute;
   max-width: 40%;
-  margin-left: 16px;
-  top:20%;
+  top:0;
+  bottom:0;
+  display: flex;
+  align-items:center;
+  left:46px;
+  z-index: 1;
+  font-weight:bold;
 }
