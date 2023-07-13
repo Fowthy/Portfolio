@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-size: 7vmin;
+  /* overflow: hidden; */
+  color: rgb(var(--foreground-rgb));
+  scroll-behavior: smooth;
+  scrollbar-width: 0px;
+  /* overflow: hidden; */
+  
+  /* background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+    ) 
+     rgb(var(--background-start-rgb));
+    }
+    #home {
+      background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), rgb(255, 154, 91) 0%, rgba(255,185,105,1) 60%); */
+      
+    }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+    
+.wrapper {
+  background-image: url('../images/background2.jpg');
+}
+.wpr {
+}
+.canvas {
+  
+  /* height: 250vh; */
+}
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.section
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    will-change: transform;
+}
+h1 {
+  text-align: center;
+  position: absolute;
+  max-width: 40%;
+  top:0;
+  bottom:0;
+  display: flex;
+  align-items:center;
+  left:46px;
+  z-index: 1;
+  font-weight:bold;
+}
