@@ -71,7 +71,11 @@ const Hobbies = () => {
       </motion.div>
       <div className="flex flex-row justify-between align-middle">
       <div className='mt-20 flex flex-col hobbies-wrapper'>
-        <p>Asdasdasd</p>
+        <p>Outside of work, I've been a guitarist for six years, finding solace and creativity in its melodies. 
+          My band and I pour our shared passion into our music, creating something truly special. 
+          More recently, I've embraced drumming, adding a new layer to my musical journey. 
+          If you share a love for music, consider joining us on Instagram to stay tuned for our musical endeavors.
+          </p>
       </div>
       <div className='flex flex-col justify-end h-auto guitar-wrapper'>
 
