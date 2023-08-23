@@ -1,7 +1,5 @@
 import {
-  // mobile,
   backend,
-  // creator,
   web,
   javascript,
   typescript,
@@ -47,8 +45,14 @@ const services = [
   },
 
   {
-    title: "Backend Developer",
+    title: "Back-End Developer",
     icon: backend,
+  },
+  {
+    title: "Business Developer Representative",
+  },
+  {
+    title: "Social Media Marketing Agent  ",
   }
 ];
 
@@ -100,18 +104,6 @@ const technologies = [
 ];
 
 const experiences = [
-  // {
-  //   title: "Junior Software Engineer",
-  //   company_name: "School of Computer Technologies and Systems",
-  //   iconBg: "#383E56",
-  //   date: "September 2017 - June 2020",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "Front-End Developer",
     company_name: "AuxCode",
@@ -125,19 +117,6 @@ const experiences = [
       "Participating in code reviews and team meetings.",
     ],
   },
-  // {
-  //   title: "Senior Software Engineer",
-  //   company_name: "Fontys University of Applied Sciences",
-  //   // icon: starbucks,
-  //   iconBg: "#383E56",
-  //   date: "September 2020 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "Front-End & Back-End Developer",
     company_name: "Capital Tool Company",
@@ -301,7 +280,7 @@ const projects = [
       },
     ],
     image: './rizzii.png',
-    source_code_link: "https://rizzii.net/",
+    source_code_link: "https://github.com/Fowthy/Rizzii",
   },
  
 ];

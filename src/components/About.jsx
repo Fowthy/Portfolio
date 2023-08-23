@@ -47,8 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am a software & web developer, currently studying at Fontys in Eindhoven.
-I have worked in a project called "Dialogue", owned by KPMG and in "Trefi", a fin-tech software, owned by Capital Tool Company. From there I gained experience communicating with clients, work efficiently in a team, and developing full stack web projects.
+       I am an experienced web developer with a background spanning 4 years in the financial industry. 
+       I'm originally from Bulgaria and now based in the Netherlands.
+       In addition to my developer role, I am the founder of Rizzii Solutions, a digital marketing agency specializing in 
+       social media marketing and web services. I hold a bachelor's degree in Software Engineering from Fontys University of Applied Sciences.
+       I am always open for new challenges and opportunities!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
