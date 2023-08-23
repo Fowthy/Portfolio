@@ -33,6 +33,7 @@ import tripguide from "./tripguide.png";
 export {
   logo,
   backend,
+  creator,
   web,
   github,
   menu,

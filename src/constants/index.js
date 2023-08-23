@@ -6,20 +6,12 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  // nodejs,
   mongodb,
   git,
   figma,
   docker,
-  // meta,
-  // starbucks,
-  // tesla,
-  // shopify,
-  // carrent,
-  // jobit,
-  tripguide,
+  creator,
   threejs,
 } from "../assets";
 
@@ -40,19 +32,21 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front-End Developer",
     icon: web,
   },
 
   {
     title: "Back-End Developer",
-    icon: backend,
+    icon: web,
   },
   {
     title: "Business Developer Representative",
+    icon: backend,
   },
   {
-    title: "Social Media Marketing Agent  ",
+    title: "Social Media Marketing Agent",
+    icon: creator,
   }
 ];
 

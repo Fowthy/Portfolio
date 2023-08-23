@@ -13,6 +13,7 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { EarthCanvas2 } from "./canvas";
 import GuitarCanvas from "./canvas/Guitar";
+import { Tooltip } from "@material-tailwind/react";
 
 const HobbieCard = ({ experience }) => {
   return (
@@ -71,11 +72,17 @@ const Hobbies = () => {
       </motion.div>
       <div className="flex flex-row justify-between align-middle">
       <div className='mt-20 flex flex-col hobbies-wrapper'>
-        <p>Outside of work, I've been a guitarist for six years, finding solace and creativity in its melodies. 
+        <p className="pb-6">
+          Outside of work, I've been a guitarist for six years, finding solace and creativity in its melodies. 
           My band and I pour our shared passion into our music, creating something truly special. 
           More recently, I've embraced drumming, adding a new layer to my musical journey. 
           If you share a love for music, consider joining us on Instagram to stay tuned for our musical endeavors.
           </p>
+          <Tooltip content="See our work" placement='right' className="ml-3">
+            <a href='https://www.instagram.com/omrazofficial/' className="w-11 h-11">
+              <img src='./instagram.png' alt='instagram' className='w-10 h-10 object-contain'/>
+            </a>
+          </Tooltip>
       </div>
       <div className='flex flex-col justify-end h-auto guitar-wrapper'>
 
