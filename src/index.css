@@ -126,6 +126,14 @@
   transform: translateZ(0);
 }
 
+.guitar-wrapper {
+  height: 1000px;
+  width: 600px;
+}
+.hobbies-wrapper {
+  margin:140px auto;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

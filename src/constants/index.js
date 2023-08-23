@@ -1,7 +1,7 @@
 import {
-  mobile,
+  // mobile,
   backend,
-  creator,
+  // creator,
   web,
   javascript,
   typescript,
@@ -10,17 +10,17 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
+  // nodejs,
   mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
+  // meta,
+  // starbucks,
+  // tesla,
+  // shopify,
+  // carrent,
+  // jobit,
   tripguide,
   threejs,
 } from "../assets";
@@ -100,53 +100,52 @@ const technologies = [
 ];
 
 const experiences = [
-  {
-    title: "Junior Software Engineer",
-    company_name: "School of Computer Technologies and Systems",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "September 2017 - June 2020",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Junior Software Engineer",
+  //   company_name: "School of Computer Technologies and Systems",
+  //   iconBg: "#383E56",
+  //   date: "September 2017 - June 2020",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
     title: "Front-End Developer",
     company_name: "AuxCode",
-    icon: starbucks,
+    // icon: starbucks,
     iconBg: "#383E56",
     date: "January 2019 - March 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining web applications using jQuery and other related technologies.",
+      "Working with cross-functional teams including product managers, designers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser and device compatibility.",
+      "Participating in code reviews and team meetings.",
     ],
   },
-  {
-    title: "Senior Software Engineer",
-    company_name: "Fontys University of Applied Sciences",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "September 2020 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Senior Software Engineer",
+  //   company_name: "Fontys University of Applied Sciences",
+  //   // icon: starbucks,
+  //   iconBg: "#383E56",
+  //   date: "September 2020 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
     title: "Full-Stack Developer",
     company_name: "Capital Tool Company",
-    icon: tesla,
+    // icon: tesla,
     iconBg: "#E6DEDD",
     date: "March 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using jQuery, React, PHP and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -184,9 +183,10 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Trefi",
+    name: "Capitool",
+    image: './capitool.jpeg',
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Capitool is a big financial web application that allows users to manage their finances, track their expenses and pay card-less using QR code payments. I developed parts of the front-end, including custom design for the bank ABN AMRO, and made sure the application is stable. For security reasons I can not provide repository link to the project.",
     tags: [
       {
         name: "jQuery",
@@ -200,26 +200,83 @@ const projects = [
         name: "Bootstrap",
         color: "pink-text-gradient",
       },
+      {
+        name: "SCSS",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Webpack",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    // image: carrent,
+    source_code_link: "https://capitool.com/",
   },
   {
-    name: "Dialogue",
+    name: "StudioNest",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web app that allows users to book a rehearsal room or studio for their band, providing a convenient and efficient solution for their music needs. A project I worked on during my studies, which was fully tested, documented, and deployed (no longer ;_;)",
     tags: [
       {
-        name: "Angular",
+        name: "NextJS",
         color: "blue-text-gradient",
       },
       {
-        name: "SCSS",
+        name: "FastAPI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "lightblue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Selenium IDE",
         color: "green-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: './studionest.png',
+    source_code_link: "https://github.com/Fowthy/StudioNest-API",
+  },
+  {
+    name: "Rizzii Solutions",
+    description:
+      "Rizzii Solutions is a digital agency created by me, that provides services such as social media marketing and management (Facebook Ads and Google Ads), web development, web design, and SEO. The website is created entirely by me from scratch. ",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Facebook Ads",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Web design",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: './rizzii.png',
+    source_code_link: "https://rizzii.net/",
   },
  
 ];
