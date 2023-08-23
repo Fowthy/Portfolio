@@ -62,6 +62,7 @@ const HobbieCard = ({ experience }) => {
 const Hobbies = () => {
   return (
     <>
+       
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I do in my free time

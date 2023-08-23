@@ -24,6 +24,18 @@ const Hero = () => {
             I develop and design web applications, <br className='sm:block hidden' />
             and I'm open for challenging opportunities.
           </p>
+          <div className="flex flex-row mt-4">
+            <Tooltip content="See my LinkedIn profile" placement="bottom" className="mt-2">
+              <a href="https://www.linkedin.com/in/aleksandar-svetoslavov-484a96177/">
+             <img src='./linkedin.png' className="w-11 h-11 rounded-full mr-4"/>
+              </a>
+            </Tooltip>
+            <Tooltip content="See my GitHub profile" placement="right" className="ml-3">
+              <a href="https://github.com/Fowthy">
+             <img src='./github.png' className="w-11 h-11 bg-white rounded-full"/>
+              </a>
+            </Tooltip>
+          </div>
         </div>
       </div>
 
