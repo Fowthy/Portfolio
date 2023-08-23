@@ -64,6 +64,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.violet-text-gradient {
+  background: #804dee; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #804dee,
+    rgba(60, 51, 80, 0.703)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #804dee,
+    rgba(105, 89, 141, 0)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .green-text-gradient {
   background: #11998e; /* fallback for old browsers */
@@ -131,7 +146,7 @@
   width: 600px;
 }
 .hobbies-wrapper {
-  margin:140px auto;
+  margin:140px auto 0 auto;
 }
 
 @keyframes mulShdSpin {

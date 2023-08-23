@@ -115,11 +115,11 @@ const experiences = [
   {
     title: "Front-End Developer",
     company_name: "AuxCode",
-    // icon: starbucks,
+    icon: './auxcode.jpeg',
     iconBg: "#383E56",
     date: "January 2019 - March 2021",
     points: [
-      "Developing and maintaining web applications using jQuery and other related technologies.",
+      "Developing and maintaining web applications using jQuery and other related technologies. (Capitool and Dialogue by KPMG)",
       "Working with cross-functional teams including product managers, designers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser and device compatibility.",
       "Participating in code reviews and team meetings.",
@@ -139,16 +139,41 @@ const experiences = [
   //   ],
   // },
   {
-    title: "Full-Stack Developer",
+    title: "Front-End & Back-End Developer",
     company_name: "Capital Tool Company",
-    // icon: tesla,
-    iconBg: "#E6DEDD",
+    icon: './capitool.jpeg',
+    iconBg: "#383E56",
     date: "March 2021 - Present",
     points: [
-      "Developing and maintaining web applications using jQuery, React, PHP and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining the fintech software by Capitool using jQuery, SCSS and PHP.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to continuously develop the software.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full-Stack Developer",
+    company_name: "Capital Tool Company (Internship)",
+    icon: './capitool.jpeg',
+    iconBg: "#383E56",
+    date: "August 2022 - January 2023",
+    points: [
+      "Worked on a restaurant system called Repido, which uses the Capitool payment system",
+      "Collaborating with company supervisor and the client, using Agile methodology",
+      "Developed the whole system ready for production, connected with the Capitool API",
+      "Ensured the system is stable and secure at the final stage (webpack)",
+      "Created and implemented the web design using Figma, Bootstrap and SCSS"
+    ],
+  },
+  {
+    title: "Business Developer Representative",
+    company_name: "Ambitioned",
+    icon: './ambitioned.jpeg',
+    iconBg: "#383E56",
+    date: "August 2023 - Present",
+    points: [
+      "Attending meetings with clients and potential clients and building a strong relationship with them",
+      "Researching for network events and potential clients on LinkedIn and other platforms",
     ],
   },
   
@@ -190,19 +215,19 @@ const projects = [
     tags: [
       {
         name: "jQuery",
-        color: "blue-text-gradient",
+        color: "orange-text-gradient",
       },
       {
         name: "PHP",
-        color: "green-text-gradient",
+        color: "",
       },
       {
         name: "Bootstrap",
-        color: "pink-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "SCSS",
-        color: "red-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "Webpack",
@@ -227,11 +252,11 @@ const projects = [
       },
       {
         name: "TailwindCSS",
-        color: "lightblue-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "MongoDB",
-        color: "yellow-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "Docker",
@@ -239,7 +264,7 @@ const projects = [
       },
       {
         name: "AWS",
-        color: "red-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "Selenium IDE",
@@ -256,7 +281,7 @@ const projects = [
     tags: [
       {
         name: "ReactJS",
-        color: "purple-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "TailwindCSS",
@@ -272,7 +297,7 @@ const projects = [
       },
       {
         name: "Web design",
-        color: "yellow-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: './rizzii.png',

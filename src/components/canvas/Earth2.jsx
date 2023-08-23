@@ -9,7 +9,7 @@ const Guitar = () => {
   const guitar = useGLTF("./bg2/scene.gltf");
 
   return (
-    <primitive object={guitar.scene}  scale={0.5} position-y={0} rotation-x={2} rotation-y={0} rotation-z={2} />
+    <primitive object={guitar.scene}  scale={0.7} position-y={0} rotation-x={2} rotation-y={0} rotation-z={2} />
   );
 };
 

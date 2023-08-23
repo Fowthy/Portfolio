@@ -25,7 +25,7 @@ const GuitarCanvas = () => {
         fov: 10,
         near: 0.1,
         far: 100,
-        position: [21, 4, 6],
+        position: [22, 4, 6],
         
       }}
     >
