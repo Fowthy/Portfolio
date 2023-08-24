@@ -9,8 +9,8 @@ const App = () => {
   };
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
       <Suspense fallback={<CanvasLoader  />}>
+      <div className='relative z-0 bg-primary'>
 
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar onComponentLoad={handleComponentLoad}/>
@@ -26,10 +26,9 @@ const App = () => {
         {/* <Feedbacks /> */}
         <div className='relative z-0'>
           <Contact onComponentLoad={handleComponentLoad}/>
-          <StarsCanvas />
         </div>
-        </Suspense>
       </div>
+        </Suspense>
     </BrowserRouter>
   );
 }
