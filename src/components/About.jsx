@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { services } from "../constants";
-import { useEffect } from "react";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -35,10 +34,7 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
-const About = ({onComponentLoad}) => {
-  useEffect(() => {
-    onComponentLoad("about");
-  }, [onComponentLoad]);
+const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>

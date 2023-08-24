@@ -1,17 +1,13 @@
 import {
-  VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { EarthCanvas2 } from "./canvas";
 import GuitarCanvas from "./canvas/Guitar";
 import { Tooltip } from "@material-tailwind/react";
 
@@ -59,10 +55,7 @@ const HobbieCard = ({ experience }) => {
   );
 };
 
-const Hobbies = ({onComponentLoad}) => {
-  // useEffect(() => {
-  //   onComponentLoad("hobbies");
-  // }, [onComponentLoad]);
+const Hobbies = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -89,7 +82,7 @@ const Hobbies = ({onComponentLoad}) => {
       </div>
       <div className='flex flex-col justify-end h-auto guitar-wrapper'>
 
-        <GuitarCanvas onLoaded={onComponentLoad("hobbies")}/>
+        <GuitarCanvas/>
         
         </div>
       </div>

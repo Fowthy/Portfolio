@@ -56,10 +56,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = ({onComponentLoad}) => {
-  useEffect(() => {
-    onComponentLoad("experience");
-  }, [onComponentLoad]);
+const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>

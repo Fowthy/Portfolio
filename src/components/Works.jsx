@@ -67,10 +67,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = ({onComponentLoad}) => {
-  useEffect(() => {
-    onComponentLoad("works");
-  }, [onComponentLoad]);
+const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
