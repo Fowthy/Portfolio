@@ -1,9 +1,9 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -59,10 +59,12 @@ const HobbieCard = ({ experience }) => {
   );
 };
 
-const Hobbies = () => {
+const Hobbies = ({onComponentLoad}) => {
+  // useEffect(() => {
+  //   onComponentLoad("hobbies");
+  // }, [onComponentLoad]);
   return (
     <>
-       
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I do in my free time
@@ -87,7 +89,7 @@ const Hobbies = () => {
       </div>
       <div className='flex flex-col justify-end h-auto guitar-wrapper'>
 
-        <GuitarCanvas/>
+        <GuitarCanvas onLoaded={onComponentLoad("hobbies")}/>
         
         </div>
       </div>

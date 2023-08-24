@@ -1,6 +1,6 @@
-import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -67,7 +67,10 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Works = ({onComponentLoad}) => {
+  useEffect(() => {
+    onComponentLoad("works");
+  }, [onComponentLoad]);
   return (
     <>
       <motion.div variants={textVariant()}>

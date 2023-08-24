@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Canvas  } from "@react-three/fiber";
+import { OrbitControls, Preload, useGLTF, useProgress } from "@react-three/drei";
 // import { PointLight } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
@@ -13,7 +13,9 @@ const Guitar = () => {
   );
 };
 
-const GuitarCanvas = () => {
+const GuitarCanvas = ({onLoaded}) => {
+  const { progress } = useProgress(); // Progress of loading
+
   return (
     <Canvas
       shadows
@@ -29,7 +31,7 @@ const GuitarCanvas = () => {
         
       }}
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader  />}>
         <OrbitControls
           autoRotate
           enableZoom={false}
@@ -41,7 +43,7 @@ const GuitarCanvas = () => {
         {/* <PointLight position={[10, 10, 10]} /> */}
         <Guitar />
 
-        <Preload all />
+        <Preload all/>
       </Suspense>
     </Canvas>
   );

@@ -2,10 +2,15 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { Tooltip } from "@material-tailwind/react";
+import { useEffect } from "react";
 
 // import { ComputersCanvas } from "./canvas";
 
-const Hero = () => {
+
+const Hero = ({onComponentLoad}) => {
+  useEffect(() => {
+    onComponentLoad("hero");
+  }, [onComponentLoad]);
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -63,6 +68,7 @@ const Hero = () => {
       </div>
     </section>
   );
+  
 };
 
 export default Hero;

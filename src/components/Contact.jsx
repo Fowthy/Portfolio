@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -7,7 +7,10 @@ import { EarthCanvas, EarthCanvas2 } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-const Contact = () => {
+const Contact = ({onComponentLoad}) => {
+  useEffect(() => {
+    onComponentLoad("contact");
+  }, [onComponentLoad]);
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",

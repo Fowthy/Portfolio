@@ -1,9 +1,9 @@
-import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { services } from "../constants";
+import { useEffect } from "react";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -35,7 +35,10 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
-const About = () => {
+const About = ({onComponentLoad}) => {
+  useEffect(() => {
+    onComponentLoad("about");
+  }, [onComponentLoad]);
   return (
     <>
       <motion.div variants={textVariant()}>

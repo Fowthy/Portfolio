@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
-const Navbar = () => {
+const Navbar = ({onComponentLoad}) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -21,9 +21,11 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
+    onComponentLoad("navbar");
+
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [onComponentLoad]);
 
   return (
     <nav

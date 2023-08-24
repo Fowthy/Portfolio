@@ -1,9 +1,9 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -56,7 +56,10 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const Experience = ({onComponentLoad}) => {
+  useEffect(() => {
+    onComponentLoad("experience");
+  }, [onComponentLoad]);
   return (
     <>
       <motion.div variants={textVariant()}>
