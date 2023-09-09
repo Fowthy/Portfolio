@@ -15,7 +15,7 @@
 
 .hash-span {
   margin-top: -100px;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   display: block;
 }
 
@@ -141,12 +141,19 @@
 }
 
 .guitar-wrapper {
-  height: 1000px;
-  width: 600px;
+  /* height: 1000px; */
+  /* width: 40vw; */
 }
 .hobbies-wrapper {
   margin:140px auto 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+  .hobbies-wrapper {
+    /* margin:  auto ; */
+  }
+}
+  
 
 @keyframes mulShdSpin {
   0%,

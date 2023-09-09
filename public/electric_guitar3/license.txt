@@ -1,0 +1,11 @@
+Model Information:
+* title:	B.C. Rich Stealth (Chuck Schuldiner Tribute)
+* source:	https://sketchfab.com/3d-models/bc-rich-stealth-chuck-schuldiner-tribute-fcf74f736a314d1b8ef1a3d5ef025e13
+* author:	FJH (https://sketchfab.com/FJH)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "B.C. Rich Stealth (Chuck Schuldiner Tribute)" (https://sketchfab.com/3d-models/bc-rich-stealth-chuck-schuldiner-tribute-fcf74f736a314d1b8ef1a3d5ef025e13) by FJH (https://sketchfab.com/FJH) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

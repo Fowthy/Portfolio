@@ -1,0 +1,256 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1215,
+      "max": [
+        5.095591068267822,
+        5.250213146209717,
+        1.7304250001907349
+      ],
+      "min": [
+        -4.478017807006836,
+        2.02659010887146,
+        1.1939669847488403
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 14580,
+      "componentType": 5126,
+      "count": 1215,
+      "max": [
+        0.9946979880332947,
+        0.9975492358207703,
+        1.0
+      ],
+      "min": [
+        -0.9997780919075012,
+        -0.9975491166114807,
+        -0.9996311068534851
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1215,
+      "max": [
+        0.9903650283813477,
+        0.9930830001831055
+      ],
+      "min": [
+        0.00534699996933341,
+        0.004164000041782856
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9720,
+      "componentType": 5126,
+      "count": 1215,
+      "max": [
+        0.9903650283813477,
+        0.9930830001831055
+      ],
+      "min": [
+        0.00534699996933341,
+        0.004164000041782856
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4236,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "3D Bear (https://sketchfab.com/EugeniaMedvedeva)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/electric-guitar-lowpoly-model-a157e3341d2d476e9c40299c79cfeafc",
+      "title": "Electric guitar lowpoly model"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 16944,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19440,
+      "byteOffset": 16944,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 29160,
+      "byteOffset": 36384,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 65544,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/guitar_texturedblinn1SG2_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "guitar_texturedblinn1SG2",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.3248856707317074,
+        "roughnessFactor": 0.5443978658536586
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "guitar_textured:polySurface1_guitar_textured:blinn1SG2_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "00c35f8353c24bf5b4a079dd48a5cf22.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        0.954809124892222,
+        0.2972196746895285,
+        0.0,
+        0.0,
+        -0.2972196746895285,
+        0.954809124892222,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.5161173343658447,
+        0.9166458249092102,
+        0.0,
+        1.0
+      ],
+      "name": "guitar_textured:polySurface1"
+    },
+    {
+      "mesh": 0,
+      "name": "guitar_textured:polySurface1_guitar_textured:blinn1SG2_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}

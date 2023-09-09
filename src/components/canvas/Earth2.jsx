@@ -29,14 +29,13 @@ const EarthCanvas2 = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          autoRotate
+          autoRotate={true}
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          // maxPolarAngle={Math.PI / 2}
+          // minPolarAngle={Math.PI / 2}
         />
               <ambientLight />
               <pointLight position={[10, 10, 10]} />
-        {/* <PointLight position={[10, 10, 10]} /> */}
         <Guitar />
 
         <Preload all />
