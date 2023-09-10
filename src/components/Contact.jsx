@@ -44,21 +44,7 @@ const Contact = () => {
         },
         "GKmCRmJKeUsJDve6W"
       )
-      .then(
-        () => {
-          emailjs
-          .send(
-            "portfolio_contact",
-            "template_klm1nyk",
-            {
-              from_name: "Alex",
-              to_name: form.name,
-              from_email: "alex@rizzii.net",
-              to_email: form.email,
-              message: form.message,
-            },
-            "GKmCRmJKeUsJDve6W"
-          ).then(() => {
+     .then(() => {
             setLoading(false);
             alert("Thank you. I will get back to you as soon as possible.");
   
@@ -67,7 +53,6 @@ const Contact = () => {
               email: "",
               message: "",
             });
-          })
         },
         (error) => {
           setLoading(false);
