@@ -64,8 +64,7 @@ const Hobbies2 = () => {
       <div className="flex flex-col md:flex-row justify-between align-middle">
         <div className='flex flex-col justify-start h-auto guitar-wrapper order-2 md:order-1'>
 
-        {/* <GuitarCanvas/> */}
-        {/* <DrumsCanvas/> */}
+        <DrumsCanvas/>
         
         </div>
       <div className='mt-28 flex flex-col  order-1 md:order-2'>
