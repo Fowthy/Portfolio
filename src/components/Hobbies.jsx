@@ -80,7 +80,7 @@ const Hobbies = () => {
       </div>
       <div className='flex flex-col justify-end h-auto guitar-wrapper'>
 
-        <GuitarCanvas/>
+        {/* <GuitarCanvas/> */}
         
         </div>
       </div>

@@ -43,6 +43,7 @@ const GuitarCanvas = () => {
           autoRotateSpeed={.8}
           rotateSpeed={0.5}
           enableZoom={false}
+          enablePan={false}
           // maxAzimuthAngle={Math.PI / 2}          
           // minAzimuthAngle={Math.PI / 2}          
           maxPolarAngle={Math.PI / 2}
