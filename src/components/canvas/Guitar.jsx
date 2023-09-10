@@ -8,7 +8,7 @@ const Guitar = () => {
   const guitar = useGLTF("./guitar5/scene.gltf");
   const isMobile = window.innerWidth <= 768;
   const scaleValue = isMobile ? 0.5 : 0.4;
-  const positionY = isMobile ? 0.9 : 0;
+  const positionY = isMobile ? 0 : 0;
 
   return (
     <primitive object={guitar.scene}  scale={scaleValue} position-y={positionY} position-x={0} position-z={1} rotation-x={0} rotation-y={1} rotation-z={1.5} />
