@@ -7,7 +7,7 @@ import CanvasLoader from "../Loader";
 const Drums = () => {
   const guitar = useGLTF("./drums/scene.gltf");
   const isMobile = window.innerWidth <= 768;
-  const scaleValue = isMobile ? 0.033 : 0.023;
+  const scaleValue = isMobile ? 0.033 : 0.022;
   const positionY = isMobile ? -1.6 : 0.7;
   return (
     <primitive object={guitar.scene}  scale={scaleValue} position-y={positionY} position-x={0.3} position-z={0} rotation-x={0} rotation-y={1.5} rotation-z={0} />
@@ -45,7 +45,7 @@ const DrumsCanvas  = () => {
           maxPolarAngle={Math.PI / 2}
           target={[0, 0, 0.5]}
         />
-              <ambientLight />
+              {/* <ambientLight /> */}
               <pointLight position={[5, 5, 5]} />
               <pointLight position={[-1, 30, -20]} />
               <pointLight position={[-5, -30, -6]} />

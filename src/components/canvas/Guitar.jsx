@@ -5,19 +5,19 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Guitar = () => {
-  const guitar = useGLTF("./electric_guitar3/scene.gltf");
+  const guitar = useGLTF("./guitar5/scene.gltf");
   const isMobile = window.innerWidth <= 768;
-  const scaleValue = isMobile ? 0.01 : 0.01;
-  const positionY = isMobile ? 0.9 : 1.1;
+  const scaleValue = isMobile ? 0.5 : 0.4;
+  const positionY = isMobile ? 0.9 : 0;
 
   return (
-    <primitive object={guitar.scene}  scale={scaleValue} position-y={positionY} position-x={0} position-z={1} rotation-x={1.3} rotation-y={-0} rotation-z={1} />
+    <primitive object={guitar.scene}  scale={scaleValue} position-y={positionY} position-x={0} position-z={1} rotation-x={0} rotation-y={1} rotation-z={1.5} />
   );
 };
 
 const GuitarCanvas = () => {
   const isMobile = window.innerWidth <= 768;
-  const widthValue = isMobile ? "100%" : "500px";
+  const widthValue = isMobile ? "100%" : "500px"; 
   const heightValue = isMobile ? "600px" : "800px";
 
 
@@ -48,10 +48,10 @@ const GuitarCanvas = () => {
           // minAzimuthAngle={Math.PI / 2}          
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-          target={[-0, 1, 1]}
+          target={[-0.3, 0, 1.5]}
         />
-              <ambientLight />
-              <pointLight position={[10, 5, 10]} />
+              {/* <ambientLight /> */}
+              <pointLight position={[-10, 1, 15]} />
         <Guitar />
 
         <Preload all/>
