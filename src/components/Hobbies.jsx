@@ -70,13 +70,8 @@ const Hobbies = () => {
       <div className='mt-20 flex flex-col hobbies-wrapper'>
         <p className="pb-6 md:text-start text-center">
           Outside of work, I've been a guitarist for six years. Its the number one thing I love to do in my free time.
-          From time to time I share my music on Instagram, so if you are interested, consider following me :p
+          
           </p>
-          <Tooltip content="Checkout my personal profile" placement='right' className="ml-3">
-            <a href='https://www.instagram.com/alexbxz636/' className="flex justify-center md:justify-start">
-              <img src='./instagram.png' alt='instagram' className='w-10 h-10 object-contain'/>
-            </a>
-          </Tooltip>
       </div>
       <div className='flex flex-col justify-end h-auto guitar-wrapper'>
 
