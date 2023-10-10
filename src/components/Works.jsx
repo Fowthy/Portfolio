@@ -83,7 +83,7 @@ const Works = () => {
           Following projects showcases my skills and experience through
            examples of my work. While I can't provide GitHub links for some projects due to security considerations, 
            I've included detailed explanations for others. 
-           They showcase my proficiency in both frontend and backend development, and offer insights into my problem-solving strategies and attention to detail."
+           They showcase my proficiency in both frontend and backend development, and offer insights into my problem-solving strategies and attention to detail.
         </motion.p>
       </div>
 

@@ -211,6 +211,68 @@ const projects = [
     source_code_link: "https://capitool.com/",
   },
   {
+    name: "DAF Maintenance Predictor",
+    description:
+      "DAF Maintenance Predictor is an AI tool specialized to predict machine failure during the production of engines in DAF Trucks company. For privacy reasons some parts of the project are not shown.",
+    tags: [
+      {
+        name: "Bash Scripting",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Grafana",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Kubernetes",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Prometheus",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: './daf.jpg',
+    source_code_link: "https://github.com/Fowthy/DAF-Maintenance-Prediction",
+  },
+  {
+    name: "BandAI",
+    description:
+      "BandAI is an AI tool aimed to faciliate the mucisian work. It allows users to upload their music, generate short songs, images and lyrics with AI and share projects with other mucisians.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Web design",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+    ],
+    image: './bandai.png',
+    source_code_link: "https://github.com/Fowthy/BandAI",
+  },
+  {
     name: "StudioNest",
     description:
       "Web app that allows users to book a rehearsal room or studio for their band, providing a convenient and efficient solution for their music needs. A project I worked on during my studies, which was fully tested, documented, and deployed (no longer ;_;)",
@@ -276,6 +338,36 @@ const projects = [
     image: './rizzii.png',
     source_code_link: "https://github.com/Fowthy/Rizzii",
   },
+  {
+    name: "Ordina Train Predictor",
+    description:
+      "Ordina Train Predictor is an AI tool specialized to predict train delays in the Netherlands for a given period of time. It was build for the company Ordina. For privacy reasons, the dataset is not available.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Jupyter Notebook",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Tensorflow",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Documentation",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: './ordina.jpg',
+    source_code_link: "https://github.com/Fowthy/Train-Delay-Predictor",
+  },
+ 
  
 ];
 
