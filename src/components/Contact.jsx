@@ -21,21 +21,19 @@ const Contact = () => {
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
-    let error = false;
-    if(form.message.length <= 3 || form.email.length == 0 || form.name.length <= 1 || !form.email.includes('@')) {
-      error = true;
-    } else {
-      error = false;
-    }
 
     setForm({
       ...form,
       [name]: value,
-      error: error
     });
 
-    console.log(form.error)
-
+    if(form.message.length <= 3 || form.email.length == 0 || form.name.length <= 1 || !form.email.includes('@')) {
+    } else {
+      setForm({
+        ...form,
+        error: false
+      })
+    }
   };
 
   const handleSubmit = (e) => {
