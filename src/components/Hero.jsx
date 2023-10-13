@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { Tooltip } from "@material-tailwind/react";
+import useDownloader from "react-use-downloader"; 
+
 
 const Hero = () => {
   return (
@@ -23,14 +25,19 @@ const Hero = () => {
             and I'm open for challenging opportunities.
           </p>
           <div className="flex flex-row mt-4">
-            <Tooltip content="See my LinkedIn profile" placement="bottom" className="mt-2">
+            <Tooltip content="See my LinkedIn profile" placement="top" className="">
               <a href="https://www.linkedin.com/in/aleksandar-svetoslavov-484a96177/">
              <img src='./linkedin.png' className="w-11 h-11 rounded-full mr-4"/>
               </a>
             </Tooltip>
-            <Tooltip content="See my GitHub profile" placement="right" className="ml-3">
+            <Tooltip content="See my GitHub profile" placement="bottom" className="mt-1">
               <a href="https://github.com/Fowthy">
-             <img src='./github.png' className="w-11 h-11 bg-white rounded-full"/>
+             <img src='./github.png' className="w-11 h-11 bg-white rounded-full mr-4"/>
+              </a>
+            </Tooltip>
+            <Tooltip content="Download my CV" placement="right" className="ml-3">
+              <a href="./Alex_Portfolio.pdf" download="Alex_Portfolio.pdf">
+             <img src='./cvicon.png' className="w-11 h-11 bg-white rounded-full p-1"/>
               </a>
             </Tooltip>
           </div>
