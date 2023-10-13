@@ -13,7 +13,9 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
-    error: false
+    errorname: false,
+    erroremail: false,
+    errormessage: false,
   });
 
   const [loading, setLoading] = useState(false);
@@ -22,18 +24,71 @@ const Contact = () => {
     const { target } = e;
     const { name, value } = target;
 
-    setForm({
-      ...form,
-      [name]: value,
-    });
-
-    if(form.message.length <= 3 || form.email.length == 0 || form.name.length <= 1 || !form.email.includes('@')) {
-    } else {
-      setForm({
-        ...form,
-        error: false
-      })
-    }
+    // setForm({
+    //   ...form,
+    //   [name]: value,
+    // });
+    switch (name) {
+      case "name":
+        if(value.length <= 1) {
+          setForm({
+            ...form,
+            [name]: value,
+            errorname: true
+          })
+        } else {
+          setForm({
+            ...form,
+            [name]: value,
+            errorname: false
+          })
+        }
+        break;
+      case "email":
+        if(!value.includes('@') || value.length <= 1) {
+          setForm({
+            ...form,
+            [name]: value,
+            erroremail: true
+          })
+        } else {
+          setForm({
+            ...form,
+            [name]: value,
+            erroremail: false
+          })
+        }
+        break;
+      case "message":
+        if(value.length <= 3) {
+          setForm({
+            ...form,
+            [name]: value,
+            errormessage: true
+          })
+        } else {
+          setForm({
+            ...form,
+            [name]: value,
+            errormessage: false
+          })
+        }
+        break;
+      }
+  //   console.log(form.message.length, value.length, form.message)
+  //   if(form.message.length <= 3 || form.email.length == 0 || form.name.length <= 1 || !form.email.includes('@')) {
+  //     setForm({
+  //       ...form,
+  //       [name]: value,
+  //       error: true
+  //     })
+  //   } else {
+  //     setForm({
+  //       ...form,
+  //       [name]: value,
+  //       error: false
+  //     })
+  //   }
   };
 
   const handleSubmit = (e) => {
@@ -42,13 +97,11 @@ const Contact = () => {
     if(form.message.length <= 3 || form.email.length == 0 || form.name.length <= 1 || !form.email.includes('@')) {
       setForm({
         ...form,
-        error: true
+        errorname: true,
+        erroremail: true,
+        errormessage: true,
       })
     } else {
-      setForm({
-        ...form,
-        error: false
-      })
       setLoading(true);
   
       emailjs
@@ -108,7 +161,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your first and last name?"
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${form.error && form.name.length <= 1 ? 'border border-red-700' : 'border-none'}`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${form.errorname && form.name.length <= 1 ? 'border border-red-700' : 'border-none'}`}
             />
           </label>
           <label className='flex flex-col'>
@@ -119,7 +172,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${form.error && (!form.email.includes('@') || form.email.length <= 1) ? 'border border-red-700' : 'border-none'}`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${form.erroremail && (!form.email.includes('@') || form.email.length <= 1) ? 'border border-red-700' : 'border-none'}`}
             />
           </label>
           <label className='flex flex-col'>
@@ -130,14 +183,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='How can I help?'
-              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none ${form.error && form.message.length <= 3 ? 'border border-red-700' : 'border-none'} font-medium`}
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none ${form.errormessage && form.message.length <= 3 ? 'border border-red-700' : 'border-none'} font-medium`}
             />
           </label>
 
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-            disabled={form.error}
+            disabled={form.errorname || form.erroremail || form.errormessage}
           >
             {loading ? "Sending..." : "Send"}
           </button>
