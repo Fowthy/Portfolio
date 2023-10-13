@@ -13,6 +13,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    error: false
   });
 
   const [loading, setLoading] = useState(false);
@@ -20,47 +21,69 @@ const Contact = () => {
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
+    let error = false;
+    if(form.message.length <= 3 || form.email.length == 0 || form.name.length <= 1 || !form.email.includes('@')) {
+      error = true;
+    } else {
+      error = false;
+    }
 
     setForm({
       ...form,
       [name]: value,
+      error: error
     });
+
+    console.log(form.error)
+
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
 
-    emailjs
-      .send(
-        "portfolio_contact",
-        "template_cn1s8c1",
-        {
-          from_name: form.name,
-          to_name: "Alex",
-          from_email: form.email,
-          // to_email: "alex@rizzii.net",
-          message: form.message,
-        },
-        "GKmCRmJKeUsJDve6W"
-      )
-     .then(() => {
-            setLoading(false);
-            alert("Thank you. I will get back to you as soon as possible.");
+    if(form.message.length <= 3 || form.email.length == 0 || form.name.length <= 1 || !form.email.includes('@')) {
+      setForm({
+        ...form,
+        error: true
+      })
+    } else {
+      setForm({
+        ...form,
+        error: false
+      })
+      setLoading(true);
   
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+      emailjs
+        .send(
+          "portfolio_contact",
+          "template_cn1s8c1",
+          {
+            from_name: form.name,
+            to_name: "Alex",
+            from_email: form.email,
+            // to_email: "alex@rizzii.net",
+            message: form.message,
+          },
+          "GKmCRmJKeUsJDve6W"
+        )
+       .then(() => {
+              setLoading(false);
+              alert("Thank you. I will get back to you as soon as possible.");
+    
+              setForm({
+                name: "",
+                email: "",
+                message: "",
+              });
+          },
+          (error) => {
+            setLoading(false);
+            console.error(error);
+  
+            alert("Ahh, something went wrong. Please try again.");
+          }
+        );
+    }
   };
 
   return (
@@ -87,7 +110,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your first and last name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${form.error && form.name.length <= 1 ? 'border border-red-700' : 'border-none'}`}
             />
           </label>
           <label className='flex flex-col'>
@@ -98,7 +121,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium ${form.error && (!form.email.includes('@') || form.email.length <= 1) ? 'border border-red-700' : 'border-none'}`}
             />
           </label>
           <label className='flex flex-col'>
@@ -109,13 +132,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='How can I help?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none ${form.error && form.message.length <= 3 ? 'border border-red-700' : 'border-none'} font-medium`}
             />
           </label>
 
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            disabled={form.error}
           >
             {loading ? "Sending..." : "Send"}
           </button>
