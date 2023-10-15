@@ -36,7 +36,7 @@ const Hero = () => {
               </a>
             </Tooltip>
             <Tooltip content="Download my CV" placement="right" className="ml-3">
-              <a href="./Alex_Portfolio.pdf" download="Alex_Portfolio.pdf">
+              <a href="./AlexSvetoslavovCV.pdf" download="AlexSvetoslavovCV.pdf">
              <img src='./cvicon.png' className="w-11 h-11 bg-white rounded-full p-1"/>
               </a>
             </Tooltip>
