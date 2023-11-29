@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-row mt-4">
             <Tooltip content="See my LinkedIn profile" placement="top" className="">
-              <a href="https://www.linkedin.com/in/aleksandar-svetoslavov-484a96177/">
+              <a href="https://www.linkedin.com/in/alexsvetoslavov/">
              <img src='./linkedin.png' className="w-11 h-11 rounded-full mr-4"/>
               </a>
             </Tooltip>
