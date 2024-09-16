@@ -45,7 +45,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Social Media Marketing Agent",
+    title: "AI Engineer",
     icon: creator,
   }
 ];
@@ -99,7 +99,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Front-End Developer",
+    title: "Junior Front-End Developer",
     company_name: "AuxCode",
     icon: './auxcode.jpeg',
     iconBg: "#383E56",
@@ -112,11 +112,11 @@ const experiences = [
     ],
   },
   {
-    title: "Front-End & Back-End Developer",
+    title: "Front-End Developer",
     company_name: "Capital Tool Company",
     icon: './capitool.jpeg',
     iconBg: "#383E56",
-    date: "March 2021 - Present",
+    date: "March 2021 - September 2024",
     points: [
       "Developing and maintaining the fintech software by Capitool using jQuery, SCSS and PHP.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to continuously develop the software.",
@@ -125,8 +125,8 @@ const experiences = [
     ],
   },
   {
-    title: "Full-Stack Developer",
-    company_name: "Capital Tool Company (Internship)",
+    title: "Full-Stack Developer (Internship)",
+    company_name: "Capital Tool Company",
     icon: './capitool.jpeg',
     iconBg: "#383E56",
     date: "August 2022 - January 2023",
@@ -143,40 +143,24 @@ const experiences = [
     company_name: "Ambitioned",
     icon: './ambitioned.jpeg',
     iconBg: "#383E56",
-    date: "August 2023 - Present",
+    date: "August 2023 - July 2024",
     points: [
       "Attending meetings with clients and potential clients and building a strong relationship with them",
       "Researching for network events and potential clients on LinkedIn and other platforms",
     ],
   },
+  {
+    title: "AI Engineer (Internship)",
+    company_name: "d-centralize",
+    icon: './d_centralize.jpeg',
+    iconBg: "#383E56",
+    date: "February 2024 - July 2024",
+    points: [
+      "Worked on the implementation of LLM (Large Language Model) workflows within the Appsemble platform",
+      "Research for optimization of current LLMs and future possibilities for the low-code platform",
+    ],
+  },
   
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
 ];
 
 const projects = [
@@ -242,6 +226,35 @@ const projects = [
     ],
     image: './daf.jpg',
     source_code_link: "https://github.com/Fowthy/DAF-Maintenance-Prediction",
+  },
+  {
+    name: "Appsemble AI",
+    description:
+      "Appsemble AI is designed to simplify the process of integrating and chaining multiple Large Language Models (LLMs) to create powerful and flexible AI workflows. Chaining allows you to pass outputs from one model to another, enabling more complex AI interactions.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LLM engineering",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Ollama",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Langchain",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+    ],
+    image: './appsembleai.png',
+    source_code_link: "https://gitlab.com/appsemble/appsemble-ai/",
   },
   {
     name: "BandAI",
@@ -371,4 +384,4 @@ const projects = [
  
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
